@@ -117,6 +117,7 @@ nav {
 }
 nav ul {
   list-style-type: none;
+  width: 418px;
   overflow: hidden;
 }
 nav ul li {
