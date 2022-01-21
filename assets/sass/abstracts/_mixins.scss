@@ -14,3 +14,16 @@
     font-family:'Old Standard TT', serif;
     font-weight: bold;
 }
+@media (max-width: 1200px) {
+    .hero{
+        height: 222px;
+
+    }
+    img{
+        height: 222px;
+        object-fit: cover;
+         width: 100%;
+        object-position: top;
+    
+}
+}

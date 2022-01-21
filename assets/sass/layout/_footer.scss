@@ -2,7 +2,7 @@ footer {
 
     .container {
         display: flex;
-        height: 284px;
+        height: 245px;
 
 
         .newsletter{
@@ -16,20 +16,21 @@ footer {
             width: 100%;
 
             h2{
-                margin-left: 30px;
+                margin-left: $margin-l;
             }
             input {
-                margin-left: 30px;
+                margin-left: $margin-l;
             }
             p{
-                margin-left: 30px;
+                margin-left: $margin-l;
             }
             
         }
     }
     .suscribe {
-        transform: rotate(90deg) translateX(-142px);
+        transform: rotate(90deg) translateX(-125px);
         margin-top: auto;
+        width: 50px;
         a{
             text-decoration: none;
             color: $c-secondary;

@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
+@media (max-width: 1200px) {
+  .hero {
+    height: 222px;
+  }
+
+  img {
+    height: 222px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
+}
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -83,7 +95,7 @@ ul {
 footer a {
   font-family: "Old Standard TT", serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .newsletter h2 {
@@ -118,15 +130,19 @@ nav ul li a {
   color: #0C0910;
 }
 nav .navbar-brand {
-  display: block;
+  display: flex;
   background-color: #0C0910;
-  padding: 40px 30px;
   color: white;
+  height: 125px;
+  width: 125px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 footer .container {
   display: flex;
-  height: 284px;
+  height: 245px;
 }
 footer .container .newsletter {
   display: flex;
@@ -138,17 +154,18 @@ footer .container .newsletter {
   width: 100%;
 }
 footer .container .newsletter h2 {
-  margin-left: 30px;
+  margin-left: 10%;
 }
 footer .container .newsletter input {
-  margin-left: 30px;
+  margin-left: 10%;
 }
 footer .container .newsletter p {
-  margin-left: 30px;
+  margin-left: 10%;
 }
 footer .suscribe {
-  transform: rotate(90deg) translateX(-142px);
+  transform: rotate(90deg) translateX(-125px);
   margin-top: auto;
+  width: 50px;
 }
 footer .suscribe a {
   text-decoration: none;
@@ -159,12 +176,32 @@ footer .suscribe a {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
+  height: calc(100vh - 125px);
+}
+@media (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
 }
 
 aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+article {
+  margin-left: 10%;
+  margin-right: 20%;
+  margin-top: 50px;
+}
+article p {
+  line-height: 1.5;
+  margin-right: 40%;
+}
+
+img {
+  height: 100%;
 }
 
 input {

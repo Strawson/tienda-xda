@@ -4,6 +4,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     ul {
         list-style-type: none;
         overflow: hidden;
@@ -21,9 +22,13 @@ nav {
         }
     }
     .navbar-brand{
-        display: block;
+        display: flex;
         background-color: $c-secondary;
-        padding: 40px 30px;
         color: $c-primary;
+        height: 125px;
+        width: 125px;
+        justify-content: center;
+        align-items: center;
+        font-size: $fz-xxl;
     }
 }
