@@ -3,4 +3,7 @@ input {
     border: 0px;
     background-color: $c-primary;
     padding: 15px;
+    &::placeholder {
+        color: $c-secondary;
+    }
 }

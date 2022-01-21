@@ -12,6 +12,9 @@ nav {
         overflow: hidden;
         li{
             float: left;
+            @include screen-sm{
+                float: none;
+            }
             
             a{
                 display: block;
@@ -22,6 +25,20 @@ nav {
             }
 
         }
+        @include screen-sm{
+            width: 100%;
+        }
+        @include screen-m{
+            width: 390px;
+        }
+    }
+    @include screen-sm{
+        height: auto;
+        display: block;
+
+    }
+    @include screen-m{
+        height: 70px;
     }
     .navbar-brand{
         display: flex;
@@ -32,5 +49,32 @@ nav {
         justify-content: center;
         align-items: center;
         font-size: $fz-xxl;
+        @include screen-sm{
+            height: 60px;
+            width: 60px;
+            font-size: $fz-l;
+        }
+        @include screen-m{
+            height: 70px;
+            width: 70px;
+            font-size: $fz-xl;
+        }
     }
+    button{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $c-primary;
+        height: 40px;
+        width: 40px;
+        border: 0;
+    }
+
+}
+#navToggle{
+    display: none;
+    @include screen-sm  {
+        display: block;
+    }
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }

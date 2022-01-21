@@ -1,16 +1,18 @@
 h1 {
     font-size: $fz-xxxl; 
     @include f-Old-bold;
+    @include screen-sm{
+        font-size: $fz-xxl; 
+    }
 }
 h2 {
     font-size: $fz-xxl;
     @include f-Old-bold;
+
 }
 p {
     font-size: $fz-m;
     @include f-Raleway;
-
-
 }
 button {
     font-size: $fz-m;

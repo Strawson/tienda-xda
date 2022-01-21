@@ -5,6 +5,7 @@ footer {
         height: 245px;
 
 
+
         .newsletter{
             
             display: flex;
@@ -26,6 +27,12 @@ footer {
             }
             
         }
+        @include screen-sm{
+            height: 150px;
+        }
+        @include screen-m{
+            height: 200px;
+        }
     }
     .suscribe {
         transform: rotate(90deg) translateX(-125px);
@@ -34,6 +41,12 @@ footer {
         a{
             text-decoration: none;
             color: $c-secondary;
+        }
+        @include screen-sm{
+            transform: rotate(90deg) translateX(-75px);
+        }
+        @include screen-m{
+            transform: rotate(90deg) translateX(-95px);
         }
     }
 }

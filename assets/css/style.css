@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
-@media (max-width: 1200px) {
-  .hero {
-    height: 222px;
-  }
-
-  img {
-    height: 222px;
-    object-fit: cover;
-    width: 100%;
-    object-position: top;
-  }
-}
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -63,6 +51,11 @@ h1 {
   font-family: "Old Standard TT", serif;
   font-weight: bold;
 }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 30px;
+  }
+}
 
 h2 {
   font-size: 30px;
@@ -108,6 +101,10 @@ footer a {
   width: 250px;
 }
 
+.d-none {
+  display: none;
+}
+
 nav {
   height: 125px;
   background-color: white;
@@ -123,12 +120,38 @@ nav ul {
 nav ul li {
   float: left;
 }
+@media (max-width: 600px) {
+  nav ul li {
+    float: none;
+  }
+}
 nav ul li a {
   display: block;
   text-align: center;
   padding: 16px;
   text-decoration: none;
   color: #0C0910;
+}
+@media (max-width: 600px) {
+  nav ul {
+    width: 100%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  nav ul {
+    width: 390px;
+  }
+}
+@media (max-width: 600px) {
+  nav {
+    height: auto;
+    display: block;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  nav {
+    height: 70px;
+  }
 }
 nav .navbar-brand {
   display: flex;
@@ -139,6 +162,39 @@ nav .navbar-brand {
   justify-content: center;
   align-items: center;
   font-size: 30px;
+}
+@media (max-width: 600px) {
+  nav .navbar-brand {
+    height: 60px;
+    width: 60px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  nav .navbar-brand {
+    height: 70px;
+    width: 70px;
+    font-size: 20px;
+  }
+}
+nav button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border: 0;
+}
+
+#navToggle {
+  display: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+@media (max-width: 600px) {
+  #navToggle {
+    display: block;
+  }
 }
 
 footer .container {
@@ -163,6 +219,16 @@ footer .container .newsletter input {
 footer .container .newsletter p {
   margin-left: 10%;
 }
+@media (max-width: 600px) {
+  footer .container {
+    height: 150px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  footer .container {
+    height: 200px;
+  }
+}
 footer .suscribe {
   transform: rotate(90deg) translateX(-125px);
   margin-top: auto;
@@ -172,14 +238,34 @@ footer .suscribe a {
   text-decoration: none;
   color: #0C0910;
 }
+@media (max-width: 600px) {
+  footer .suscribe {
+    transform: rotate(90deg) translateX(-75px);
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  footer .suscribe {
+    transform: rotate(90deg) translateX(-95px);
+  }
+}
 
+@media (min-width: 600px) and (max-width: 1200px) {
+  .hero {
+    height: 222px;
+  }
+}
 .content {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row-reverse;
   height: calc(100vh - 125px);
 }
-@media (max-width: 1200px) {
+@media (min-width: 600px) and (max-width: 1200px) {
+  .content {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
   .content {
     flex-direction: column;
   }
@@ -190,6 +276,11 @@ aside {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 600px) {
+  aside {
+    margin-top: 25px;
+  }
+}
 
 article {
   margin-left: 10%;
@@ -199,10 +290,66 @@ article {
 article p {
   line-height: 1.5;
   margin-right: 40%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+@media (max-width: 600px) {
+  article p {
+    margin-right: auto;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  article p {
+    margin-right: auto;
+  }
+}
+article button {
+  padding: 16px 32px;
+  background-color: white;
+  border: 1px solid black;
+}
+@media (max-width: 600px) {
+  article button {
+    margin-bottom: 15px;
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  article button {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 600px) {
+  article {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  article {
+    margin-top: 65px;
+  }
 }
 
-img {
+.hero img {
   height: 100%;
+}
+@media (min-width: 600px) and (max-width: 1200px) {
+  .hero img {
+    height: 261px;
+    object-fit: cover;
+    width: 100%;
+    object-position: 0 30%;
+  }
+}
+@media (max-width: 600px) {
+  .hero img {
+    height: 222px;
+    object-fit: cover;
+    width: 100%;
+    object-position: top;
+  }
 }
 
 input {
@@ -210,6 +357,9 @@ input {
   border: 0px;
   background-color: white;
   padding: 15px;
+}
+input::placeholder {
+  color: #0C0910;
 }
 
 /*# sourceMappingURL=style.css.map */

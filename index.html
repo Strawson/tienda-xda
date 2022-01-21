@@ -12,12 +12,14 @@
         <div class="navbar-brand">
             <span class="">XDA</span>
         </div>
-            <ul>
-                <li><a href="#">Mujer</a></li>
-                <li><a href="#">Hombre</a></li>
-                <li><a href="#">Accesorios</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
+        <button id="navToggle" onclick="toggleMenu()"><img src="assets/img/navbar.svg" height="25" width="25"/></button>
+        <ul id="navMenu">
+            <li><a href="#">Mujer</a></li>
+            <li><a href="#">Hombre</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        
     </nav>
     <div class="content">
         <section class="hero">
@@ -45,5 +47,13 @@
             </footer>
         </aside>
     </div>
+    <script>
+        const navMenu = document.getElementById("navMenu");
+        function toggleMenu(){
+            navMenu.classList.toggle("d-none");
+        }
+
+    </script>
+    <script src="assets/js/js.js"></script>
 </body>
 </html>
