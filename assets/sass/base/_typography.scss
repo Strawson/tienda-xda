@@ -1,0 +1,39 @@
+h1 {
+    font-size: $fz-xxxl; 
+    @include f-Old-bold;
+}
+h2 {
+    font-size: $fz-xxl;
+    @include f-Old-bold;
+}
+p {
+    font-size: $fz-m;
+    @include f-Raleway;
+
+
+}
+button {
+    font-size: $fz-m;
+    @include f-Raleway-bold;
+}
+ul {
+    @include f-Raleway-bold;
+}
+.navbar-brand {
+    @include f-Old-bold;
+}
+footer a{
+    @include f-Old-bold;
+    font-size: $fz-m;
+
+}
+.newsletter{
+    h2{
+        width: 250px;
+        height: 50px;
+    }
+    p {
+        @include f-Old;
+        width: 250px;
+    }
+}

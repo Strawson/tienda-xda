@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&family=Raleway:wght@400;700&display=swap");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Old Standard TT", serif;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Old Standard TT", serif;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Raleway";
+  font-weight: 400;
+}
+
+button {
+  font-size: 16px;
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+ul {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-family: "Old Standard TT", serif;
+  font-weight: bold;
+}
+
+footer a {
+  font-family: "Old Standard TT", serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.newsletter h2 {
+  width: 250px;
+  height: 50px;
+}
+.newsletter p {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  width: 250px;
+}
+
+nav {
+  height: 125px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav ul li {
+  float: left;
+}
+nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  color: #0C0910;
+}
+nav .navbar-brand {
+  display: block;
+  background-color: #0C0910;
+  padding: 40px 30px;
+  color: white;
+}
+
+footer .container {
+  display: flex;
+  height: 284px;
+}
+footer .container .newsletter {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background-color: #0C0910;
+  color: white;
+  width: 100%;
+}
+footer .container .newsletter h2 {
+  margin-left: 30px;
+}
+footer .container .newsletter input {
+  margin-left: 30px;
+}
+footer .container .newsletter p {
+  margin-left: 30px;
+}
+footer .suscribe {
+  transform: rotate(90deg) translateX(-142px);
+  margin-top: auto;
+}
+footer .suscribe a {
+  text-decoration: none;
+  color: #0C0910;
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input {
+  width: 250px;
+  border: 0px;
+  background-color: white;
+  padding: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+.content{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

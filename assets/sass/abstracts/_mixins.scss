@@ -1,0 +1,16 @@
+@mixin f-Raleway-bold {
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+@mixin f-Raleway {
+    font-family: 'Raleway';
+    font-weight: 400;
+}
+@mixin f-Old {
+    font-family:'Old Standard TT', serif;
+    font-weight: 400;
+}
+@mixin f-Old-bold {
+    font-family:'Old Standard TT', serif;
+    font-weight: bold;
+}

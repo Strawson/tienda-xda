@@ -1,0 +1,29 @@
+nav {
+    height: 125px;
+    background-color: $c-primary;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+        li{
+            float: left;
+            
+            a{
+                display: block;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+                color: $c-secondary;
+            }
+
+        }
+    }
+    .navbar-brand{
+        display: block;
+        background-color: $c-secondary;
+        padding: 40px 30px;
+        color: $c-primary;
+    }
+}
