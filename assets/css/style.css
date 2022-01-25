@@ -177,16 +177,20 @@ nav .navbar-brand {
     font-size: 20px;
   }
 }
+nav .navbar-brand__logo {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
 @media (min-width: 600px) and (max-width: 1200px) {
   nav .navbar-brand__logo {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
+    writing-mode: lr;
+    transform: rotate(0deg);
   }
 }
 @media (max-width: 600px) {
   nav .navbar-brand__logo {
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
+    writing-mode: lr;
+    transform: rotate(0deg);
   }
 }
 nav button {
